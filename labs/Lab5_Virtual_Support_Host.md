@@ -3,11 +3,12 @@
 **Topic:** AI Avatar & Digital Human Videos  
 **Tool:** OmniMedia → Avatar → Script Avatar  
 **Level:** Beginner  
-**Video format:** 16:9 (widescreen landscape)
+**Video format:** 16:9 (widescreen landscape)  
+**Target duration:** 5–15 seconds (aim for approximately 10–13 seconds)
 
 ## Goal
 
-Create a 40-second branded customer service video featuring a friendly, consistent AI avatar who acts as a virtual support host, maintains clear eye contact against a neutral studio backdrop, presents three customer help channels, and concludes with a verified support portal URL.
+Create a 5–15-second branded customer service video featuring a friendly, consistent AI avatar. The virtual support host should maintain natural eye contact against a neutral studio backdrop, introduce three customer help channels, and conclude with a support portal address approved by your company.
 
 ## Before You Start
 
@@ -15,19 +16,21 @@ You will need:
 
 - An OmniMedia account with access to **Avatar Studio** and sufficient credits for avatar video generation.
 - The sample assets pre-loaded in `sample-assets/` (virtual host avatar image and voiceover audio track), or your own brand media.
-- Approved customer support details (the ready-to-use prompt below uses a multi-channel help desk structure for TGX Technologies).
+- Approved customer support details (the ready-to-use script below is customized for TGX Technologies).
+- A **TTS voiceover that matches your chosen script exactly**. If you change the script, regenerate the audio before creating the avatar video.
 
 ## Sample Assets
 
 The sample assets for this lab are pre-loaded in the [`sample-assets/`](../sample-assets) directory:
 
-| Asset Type | Requirement | File Link | Description |
-| :--- | :--- | :--- | :--- |
-| **Virtual Host Avatar** | **Required** | [support-host-avatar.png](../sample-assets/IMGs/support-host-avatar.png) | Friendly, professional customer support representative portrait on a neutral studio backdrop |
-| **Voiceover Audio Track** | **Required** | [virtual-support-host-voiceover.mp3](../sample-assets/AUDIOs/virtual-support-host-voiceover.mp3) | 40-second synchronized speech audio track |
+| Asset Type                | Requirement  | File Link                                                                                        | Description                                                                         |
+| :------------------------ | :----------- | :----------------------------------------------------------------------------------------------- | :---------------------------------------------------------------------------------- |
+| **Virtual Host Avatar**   | **Required** | [support-host-avatar.png](../sample-assets/IMGs/support-host-avatar.png)                         | Friendly, professional customer support representative on a neutral studio backdrop |
+| **Voiceover Audio Track** | **Required** | [virtual-support-host-voiceover.mp3](../sample-assets/AUDIOs/virtual-support-host-voiceover.mp3) | Regenerated 5–15-second MP3 containing the exact short narration below              |
 
-> [!NOTE]
-> In OmniMedia, **Script Avatar** pairs an avatar portrait with a voice audio file and a prompt directive to animate natural facial expressions, eye contact, and lip movements in widescreen **16:9** landscape format.
+> **Note:** In OmniMedia, **Script Avatar** pairs an avatar portrait with a voice audio file and a prompt to animate facial expressions, eye contact, and lip movements. Select **16:9** landscape format. The video duration follows the uploaded audio.
+
+> **Important:** The original sample MP3 was designed for a 40-second video. **Do not reuse that recording unchanged.** Regenerate it using one of the short scripts below, then replace the sample file before the lab.
 
 ## Step 1: Open Script Avatar
 
@@ -37,85 +40,80 @@ The sample assets for this lab are pre-loaded in the [`sample-assets/`](../sampl
 
 ## Step 2: Select Your Virtual Host Avatar
 
-1. Click on the avatar slot on the left side of the composer.
-2. In the modal, you can either select a pre-made avatar from the catalog or click **Upload** to choose `sample-assets/IMGs/support-host-avatar.png`.
+1. Click the avatar slot on the left side of the composer.
+2. In the modal, select a pre-made avatar from the catalog or click **Upload** to choose `sample-assets/IMGs/support-host-avatar.png`.
 3. Confirm that the support host image appears in the avatar preview box.
 
-## Step 3: Attach the Voiceover Audio Track
+## Step 3: Prepare and Attach the Voiceover Audio Track
 
-1. Click the **Upload Audio** pill button below the prompt box.
-2. Select **Browse Files** and choose `sample-assets/AUDIOs/virtual-support-host-voiceover.mp3`.
-3. Confirm that the audio pill updates with the loaded filename.
+1. Choose either the **Template Script** or **Ready-to-Use Script** in Step 4.
+2. Generate the voiceover using a TTS tool. Use a warm, clear, friendly American English voice at a natural pace.
+3. Preview the audio and confirm it lasts **between 5 and 15 seconds**. Aim for roughly **10–13 seconds**; do not rush the voice unnaturally.
+4. Save the new audio as `virtual-support-host-voiceover.mp3`, replacing the old 40-second sample file if preparing workshop assets.
+5. Click **Upload Audio** below the prompt box.
+6. Select **Browse Files** and upload your new MP3.
+7. Confirm that the audio pill displays the selected filename.
 
-## Step 4: Enter the Concept Prompt
+## Step 4: Enter the Script
 
-Choose one of the prompts below and paste it into the prompt box.
+Both options below contain **spoken words only**. They are ready to paste into a TTS tool. Do not include timing labels, stage directions, or visual instructions in the TTS input.
 
-### Template Prompt
+### Template Script
 
-Use this template to customize the virtual support host for your company:
-
-```text
-Create a 40-second branded video with a friendly, consistent AI avatar presenting [COMPANY] support options. Use the approved script, clear eye contact, neutral studio backdrop, and on-screen labels for the three help channels. End with the verified support URL.
-
-Script & On-Screen Cues:
-- Greeting (0–8s): "Hi there! Welcome to [COMPANY] Customer Support. We're here to help you succeed."
-- Channel 1 (8–18s): "First, visit our 24/7 Knowledge Base for instant answers and step-by-step guides." [On-Screen: Knowledge Base]
-- Channel 2 (18–28s): "Need one-on-one assistance? Launch Live Chat directly from your account dashboard." [On-Screen: Live Chat]
-- Channel 3 & Closing (28–40s): "For technical requests, submit a ticket anytime. Start at [SUPPORT URL]." [On-Screen: Support Portal]
-
-Visual style: 16:9 widescreen landscape, neutral studio background, friendly eye contact, natural head movements, legible lower-third channel labels.
-```
-
-### Ready-to-Use Prompt
-
-Use this pre-configured prompt directly with the provided sample assets:
+Replace `COMPANY` and `SUPPORT ADDRESS` with your actual company name and TTS-friendly, verified support address **before** generating the audio. Do not feed the placeholders to TTS:
 
 ```text
-Create a 40-second branded video with a friendly, consistent AI avatar presenting TGX Technologies support options. Use the approved script, clear eye contact, neutral studio backdrop, and on-screen labels for the three help channels. End with the verified support URL.
-
-Host speech & scene directions:
-"Hi there! Welcome to TGX Technologies Customer Support. I'm your virtual host, and I'm here to ensure you get the help you need, right when you need it.
-
-We offer three fast and convenient ways to connect with us:
-First, explore our 24/7 Knowledge Base for step-by-step tutorials and frequently asked questions.
-Second, start an instant Live Chat with our specialist team right from your account dashboard.
-And third, submit a priority support ticket for custom technical inquiries.
-
-Whenever you need a hand, visit support.tgxtechnologies.com. We're always here to support your success!"
-
-Visual styling: 16:9 widescreen, clean neutral studio backdrop, warm natural lighting, confident and friendly eye contact, sharp on-screen lower-third labels for each channel.
+Welcome to COMPANY! Need help? Explore our Knowledge Base, start Live Chat, or submit a support ticket. Visit SUPPORT ADDRESS.
 ```
+
+### Ready-to-Use Script — TGX Technologies
+
+Use this short narration for the TGX Technologies virtual support host. It contains approximately 27 spoken words and is intended to fit under 15 seconds at a natural speaking pace:
+
+```text
+Welcome to TGX Technologies! Need help? Explore our Knowledge Base, start Live Chat, or submit a support ticket. Visit support dot T G X technologies dot com.
+```
+
+> **Before publishing:** Confirm that `support.tgxtechnologies.com` is your official, active support portal. The spoken URL above is written phonetically for TTS and has **not been independently verified**. Replace it if the approved address differs. Preview the final audio because pauses and pronunciation can change its duration.
+
+> **Visual guidance (not for TTS):** Use a friendly, professional male support host, a clean neutral studio background, warm lighting, direct eye contact, and 16:9 framing. If your video workflow supports text overlays, show **Knowledge Base**, **Live Chat**, and **Support Ticket**, plus the verified support URL at the end. Add overlays separately; do not paste these instructions into the TTS script.
 
 ## Step 5: Generate the Video
 
-1. Verify that your avatar is selected and the audio track is attached.
-2. Review the prompt text and ensure the orientation is set to **16:9**.
-3. Click **Generate** once.
-4. Track generation progress in the top notification tray or **History**.
-5. Once completed, navigate to **History → Creations** to preview the completed digital human host.
+1. Verify that your avatar is selected and the correct audio track is attached.
+2. Enter the selected script in the prompt field if the workflow requires text, ensuring it matches the uploaded audio.
+3. Check that **16:9** landscape orientation is selected and the audio lasts **no more than 15 seconds**.
+4. Click **Generate** once.
+5. Track generation progress in the top notification tray or **History**.
+6. Once completed, navigate to **History → Creations** to preview the digital human host.
 
 ## Step 6: Review and Download
 
-Audit your completed digital human support video against this quality checklist:
+Audit the completed video against this checklist:
 
-- [ ] **Eye Contact:** Does the avatar maintain natural, friendly eye contact facing forward?
-- [ ] **Lip-Sync Accuracy:** Are the avatar's lip movements synchronized with the spoken audio?
-- [ ] **Channel Presentation:** Are all three support channels introduced clearly?
-- [ ] **Studio Setting:** Is the background clean, neutral, and professional without visual artifacts?
-- [ ] **16:9 Framing:** Is the video properly framed in widescreen landscape mode?
+- [ ] **Eye Contact:** Does the avatar maintain natural, friendly eye contact?
+- [ ] **Lip-Sync Accuracy:** Are lip movements synchronized with the uploaded speech?
+- [ ] **Channel Presentation:** Are the Knowledge Base, Live Chat, and support ticket mentioned clearly?
+- [ ] **Studio Setting:** Is the background clean, neutral, and free of obvious artifacts?
+- [ ] **16:9 Framing:** Is the video correctly framed in widescreen landscape mode?
+- [ ] **Support Address:** Does the closing line use the company-approved URL?
+- [ ] **Audio Consistency:** Does the spoken narration exactly match the selected script?
+- [ ] **Duration:** Is the finished video between **5 and 15 seconds**?
 
-When satisfied, click **Download** to save your MP4 video file.
+When satisfied, click **Download** to save the MP4 file.
 
 ## Troubleshooting
 
-| Problem | What to Do |
-| :--- | :--- |
-| **"Please upload an audio file before generating" error** | Ensure you clicked the **Upload Audio** button and attached `virtual-support-host-voiceover.mp3`. |
-| **Generate button is disabled** | Confirm both an avatar image is selected and prompt text is entered. |
-| **Avatar appears in portrait orientation** | Verify that your selected avatar or orientation setting is set to **16:9**. |
-| **Credit limit notice appears** | Review your active Avatar Studio generation credits with the workshop instructor. |
+| Problem                                             | What to Do                                                                                                          |
+| :-------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------ |
+| **“Please upload an audio file before generating”** | Click **Upload Audio** and attach the matching MP3 voiceover.                                                       |
+| **Generate button is disabled**                     | Confirm an avatar is selected, the required prompt is present, and an audio file is attached.                       |
+| **Avatar appears in portrait orientation**          | Change the orientation setting to **16:9** before generating.                                                       |
+| **Audio and lip movements do not match**            | Make sure the MP3 contains the exact final script; regenerate the voiceover if you edited the text.                 |
+| **TTS reads the URL awkwardly**                     | Use spoken wording such as “support dot T G X technologies dot com.”                                                |
+| **Video runs longer than 15 seconds**               | Regenerate the MP3 with the short script, trim long pauses, and confirm the new audio duration before trying again. |
+| **Credit limit notice appears**                     | Review your Avatar Studio credits with the workshop instructor.                                                     |
 
 ## Expected Result
 
-A downloaded **16:9 widescreen branded digital human video** featuring a friendly virtual support host presenting three customer assistance channels with natural eye contact, clear lip-sync, and a concluding support URL.
+A downloadable **5–15-second, 16:9 widescreen digital human video** featuring a friendly TGX Technologies virtual host introducing the Knowledge Base, Live Chat, and support tickets with natural eye contact and synchronized speech, then ending with a company-approved support address. Aim for **10–13 seconds**; confirm the actual runtime in the exported video.

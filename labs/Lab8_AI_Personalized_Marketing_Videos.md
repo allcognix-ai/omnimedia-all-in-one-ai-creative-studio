@@ -3,13 +3,14 @@
 **Topic:** AI Personalized Marketing Videos  
 **Tool:** OmniMedia → Avatar → Script Avatar  
 **Level:** Beginner  
-**Video format:** 9:16 (vertical)
+**Video format:** 9:16 (vertical)  
+**Target duration:** 5–15 seconds (recommended: approximately 10–12 seconds)
 
 ---
 
 ## Goal
 
-Create a 20-second personalized welcome video featuring a friendly presenter addressing a customer by name (`[FIRST NAME]`), introducing a key benefit of your brand (`[BRAND]`), and guiding them to their next onboarding action (`[NEXT STEP]`). The video uses the **Script Avatar** engine to deliver natural speech, expressive delivery, and synchronized lip movements directly from a text script.
+Create a **5–15-second personalized welcome video** featuring a friendly AI presenter. The host greets a customer by name (`[FIRST NAME]`), highlights one benefit of your brand (`[BRAND]`), and provides one clear onboarding action (`[NEXT STEP]`). Use **Script Avatar** with a presenter image and matching voiceover audio to produce natural expressions and synchronized lip movements.
 
 ---
 
@@ -17,100 +18,142 @@ Create a 20-second personalized welcome video featuring a friendly presenter add
 
 You will need:
 
-- An **OmniMedia** account with **Avatar Studio** access and sufficient credits for video generation.
-- A clear, front-facing vertical (9:16) presenter avatar image in PNG, JPG/JPEG, or WebP format (or use the provided sample asset: [woman_avatar.webp](../sample-assets/IMGs/woman_avatar.webp)).
-- A sample personalized welcome script (~45–50 words) calibrated to yield an authentic **20-second duration**.
-- Sample demo files can also be browsed directly in the [sample-assets/IMGs/](../sample-assets/IMGs/) directory.
+- An **OmniMedia** account with **Avatar Studio** access and sufficient video-generation credits.
+- A clear, front-facing presenter portrait suitable for **9:16 vertical** framing.
+- A voiceover audio file named **`Laura.mp3`** that matches the chosen script and is **5–15 seconds** long.
+- An approved personalized welcome message containing the customer's name, a brand benefit, and a next step.
+
+> **Important:** If you change the customer's name, brand, or spoken text, create a new matching voiceover MP3. Do not upload `Laura.mp3` with a different script and assume the avatar will speak the new words.
+
+---
+
+## Sample Assets
+
+The sample assets for this lab are referenced from the [`sample-assets/`](../sample-assets/) directory:
+
+| Asset Type                | Requirement  | File Link                                                    | Description                                                                                                   |
+| :------------------------ | :----------- | :----------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------ |
+| **Presenter Avatar**      | **Required** | [woman_avatar.webp](../sample-assets/IMGs/woman_avatar.webp) | Friendly, professional presenter portrait suitable for a vertical video                                       |
+| **Voiceover Audio Track** | **Required** | [Laura.mp3](../sample-assets/AUDIOs/Laura.mp3)               | Sample voiceover for the personalized welcome; verify that it matches the final script and lasts 5–15 seconds |
+
+> **Note:** In OmniMedia, **Script Avatar** uses a selected presenter image and uploaded voiceover to generate a speaking avatar with lip synchronization. The written scripts below are **TTS-ready** if you need to create or replace the audio. The sample file must be available at the linked path in your workshop materials.
 
 ---
 
 ## Step 1: Open Script Avatar
 
 1. Sign in to **OmniMedia**.
-2. Open **Avatar** in the top navigation bar.
-3. Select the **Script Avatar** tab from the top navigation bar.
+2. Open **Avatar** from the top navigation bar.
+3. Under **Create**, select **Script Avatar**.
 
 ---
 
 ## Step 2: Add Your Presenter Avatar
 
-1. On the left side of the panel, locate the **ADD AVATAR** box.
-2. Click **ADD AVATAR** and select your presenter's portrait (or use the sample asset: [woman_avatar.webp](../sample-assets/IMGs/woman_avatar.webp)).
-3. Confirm that the preview displays the presenter clearly with a front-facing angle and good lighting.
+1. Locate the **ADD AVATAR** box in the composer.
+2. Click **ADD AVATAR**, then select a portrait or upload [`sample-assets/IMGs/woman_avatar.webp`](../sample-assets/IMGs/woman_avatar.webp).
+3. Confirm that the preview shows the presenter clearly, facing forward, with even lighting.
+4. Select **9:16 vertical** output if the composer offers an aspect-ratio setting.
 
-> [!TIP]
-> The generated video automatically inherits the aspect ratio of your avatar reference. Using a 9:16 vertical image generates a native vertical video ideal for mobile viewing, emails, and direct messaging.
+> **Tip:** A vertically framed portrait supports mobile-friendly composition, but verify the final output's aspect ratio instead of assuming it automatically follows the image.
 
 ---
 
-## Step 3: Enter the Personalized Welcome Script
+## Step 3: Prepare the Personalized Welcome Script
 
-In the text area displaying **“Describe what the avatar should say or do...”**, enter the personalized speech for your presenter.
+Choose **one** of the following. Only the words within the code blocks should be spoken; do not include headings, instructions, or visual directions in TTS.
 
 ### Template Script
 
-```text
-Hi [FIRST NAME], welcome to [BRAND]! We’re thrilled to have you with us. With our platform, [INTRODUCE ONE RELEVANT BENEFIT]. Tap the button below to [NEXT STEP] and get started today!
-```
-
-### Ready-to-Use 20-Second Example (~48 Words)
+Replace the placeholders with your customer's details and concise phrases **before** generating audio:
 
 ```text
-Hi Alex, welcome to OmniMedia! We’re thrilled to have you with us. With our studio, you can turn your creative ideas into high-converting videos in minutes, without any filming experience. Tap the button below to open your dashboard and create your first video today!
+Hi [FIRST NAME], welcome to [BRAND]! [ONE SHORT BENEFIT]. [ONE CLEAR NEXT STEP]. Let's get started!
 ```
 
-#### Duration & Pacing Calibration:
-- At standard conversational pacing (~2.4 words per second), **45 to 50 words** results in an optimal **18 to 20 second video**.
-- If you need a shorter 15-second welcome, shorten the script to ~35 words.
-- *(Optional Audio Upload)*: If you already have a recorded voiceover file, you can click **🎙️ Upload Audio** instead of typing text.
+**Example replacements:** `[ONE SHORT BENEFIT]` → `Create great videos in minutes`; `[ONE CLEAR NEXT STEP]` → `Open your dashboard and make your first video`.
+
+### Ready-to-Use Script — OmniMedia
+
+```text
+Hi Alex, welcome to OmniMedia! Create professional videos in minutes. Open your dashboard and make your first video today!
+```
+
+### Duration and TTS Guidance
+
+- **Target:** 5–15 seconds, ideally around **10–12 seconds**.
+- **Script length:** Approximately **18–25 spoken words** is a useful starting point for a short, natural greeting. Actual audio duration varies with voice, pronunciation, and pauses.
+- **Voice:** Choose a friendly, warm, clear voice with a natural conversational pace.
+- **Script matching:** The uploaded `Laura.mp3` must contain the **exact approved narration**. If its words differ, regenerate the MP3 using your final script.
+- **Personalization:** Replace `Alex` with the recipient's first name and listen for correct pronunciation before generating video.
 
 ---
 
-## Step 4: Generate the Video
+## Step 4: Upload the Voiceover Audio
 
-1. Verify that your avatar is selected in the **ADD AVATAR** box.
-2. Check that your script includes your recipient's name, brand benefit, and next step.
-3. Review the dynamic credit estimate displayed beside **Generate ✨**.
-4. Click **Generate ✨** once.
-5. The automated engine will process your request:
-   - *Phase 1*: Audio speech synthesis and duration calculation.
-   - *Phase 2*: Facial landmark mapping and lip-sync alignment.
-   - *Phase 3*: Video rendering and final packaging.
-6. Once processing is complete, navigate to **History → Creations** to preview your video.
+1. Click **Upload Audio** below the prompt box.
+2. Select **Browse Files**.
+3. Upload [`sample-assets/AUDIOs/Laura.mp3`](../sample-assets/AUDIOs/Laura.mp3), or the newly generated MP3 if you customized the script.
+4. Confirm that the audio attachment displays **`Laura.mp3`** (or your replacement filename).
+5. Play or review the audio if available. Check that the narration matches your selected script and lasts **between 5 and 15 seconds**.
+
+> **Important:** If the supplied `Laura.mp3` contains different words or has a different duration, replace it with audio generated from the final narration. The MP3—not the target duration written in the prompt—determines how long the spoken segment will be.
 
 ---
 
-## Step 5: Check and Download
+## Step 5: Generate the Video
 
-Before sending or embedding the personalized video in your onboarding campaigns, verify the output:
+1. Verify that your presenter is selected in **ADD AVATAR**.
+2. Confirm that **`Laura.mp3`**, or its matching personalized replacement, is attached.
+3. If the composer requires a text prompt, use the **same spoken script** as the audio. Keep any visual instructions separate from the TTS input.
+4. Verify the recipient's name, brand benefit, next action, and **9:16 vertical** format.
+5. Check the displayed credit estimate, then click **Generate** once.
+6. When generation is complete, navigate to **History → Creations** and preview your video.
 
-- [ ] **Personalization Accuracy**: The presenter clearly and naturally pronounces `[FIRST NAME]` and `[BRAND]`.
-- [ ] **Lip Synchronization**: Mouth movements match the spoken words throughout the entire 20 seconds.
-- [ ] **Visual Quality**: The presenter's face remains sharp, natural, and free of visual distortion.
-- [ ] **Pacing & Tone**: The delivery feels warm, authentic, and welcoming rather than robotic or rushed.
-- [ ] **Aspect Ratio**: Full **9:16 vertical frame** ready for mobile display and social channels.
+---
 
-Click **Download** to save your finalized `.mp4` video locally.
+## Step 6: Review and Download
+
+Before using the personalized video, verify:
+
+- [ ] **Duration:** The final video lasts **5–15 seconds**.
+- [ ] **Personalization:** The presenter says the correct customer's name and brand.
+- [ ] **Benefit and Next Step:** One relevant benefit and one clear action are spoken.
+- [ ] **Audio Match:** The video uses the intended `Laura.mp3` narration or its correctly personalized replacement.
+- [ ] **Lip-Sync:** Mouth movements match the audio throughout the video.
+- [ ] **Eye Contact:** The presenter looks naturally toward the camera.
+- [ ] **Visual Quality:** The face remains sharp, realistic, and well lit.
+- [ ] **Tone:** Delivery sounds warm, clear, and unhurried.
+- [ ] **Aspect Ratio:** The completed video is **9:16 vertical**.
+
+Click **Download** to save the final `.mp4` file.
 
 ---
 
 ## Troubleshooting
 
-| Problem | Root Cause | Solution |
-| :--- | :--- | :--- |
-| **"ADD AVATAR" is empty / Generate disabled** | No avatar portrait was selected. | Click the **ADD AVATAR** box and upload an image (or choose an avatar from the library). |
-| **Video duration is shorter/longer than 20 seconds** | Script word count is outside the 45–50 word range. | Count words in your script. Aim for 45–50 words for a 20s video (~10 characters per second). |
-| **Recipient name is mispronounced** | Unusual spelling or unique phonetics in the customer's name. | Use a phonetic spelling in the text (e.g., write *"Ah-lex"* or *"See-oh-bhan"* for Siobhan) to guide the speech engine. |
-| **Insufficient Credits error** | Account balance is lower than the required amount for the video length. | Check your credit balance in your account dashboard. |
-| **Avatar movements feel static** | The input portrait had low resolution or heavy shadowing. | Use a clean, brightly lit, high-resolution portrait where the face and eyes are clearly visible. |
+| Problem                                             | Likely Cause                                                    | Solution                                                                                  |
+| :-------------------------------------------------- | :-------------------------------------------------------------- | :---------------------------------------------------------------------------------------- |
+| **“Please upload an audio file before generating”** | Voiceover audio was not attached.                               | Click **Upload Audio** and select `Laura.mp3` or your matching personalized MP3.          |
+| **ADD AVATAR is empty or Generate is disabled**     | The presenter image or another required input is missing.       | Select an avatar, attach audio, and provide the required prompt.                          |
+| **Video is longer than 15 seconds**                 | The audio is too long or contains excessive pauses.             | Shorten the narration, regenerate the MP3, and verify its length before generating again. |
+| **Video is shorter than 5 seconds**                 | The audio is too short or spoken too quickly.                   | Use a slightly longer narration or a natural TTS speed, then recreate the MP3.            |
+| **Recipient's name is mispronounced**               | The TTS voice has difficulty with the name.                     | Test a phonetic spelling when generating audio, then listen to the result.                |
+| **Avatar says the wrong words**                     | `Laura.mp3` does not match the customized text.                 | Regenerate a voiceover from the final personalized script and upload it.                  |
+| **Lip-sync is inaccurate**                          | Audio is unclear or does not align with the intended narration. | Use clean, matching audio without overlapping voices or music.                            |
+| **Video is not vertical**                           | The output setting is incorrect.                                | Select **9:16** where available and confirm the framing.                                  |
+| **Insufficient credits**                            | The account has fewer credits than required.                    | Check your credits before retrying.                                                       |
+| **Avatar looks unnatural**                          | The portrait is blurry, angled, or poorly lit.                  | Use a sharp front-facing image with clear eyes and even lighting.                         |
 
 ---
 
 ## Expected Result
 
-A downloaded **9:16 vertical personalized welcome video (20 seconds)** featuring:
-1. A realistic presenter speaking directly to camera.
-2. A customized greeting addressed to your specific customer.
-3. Natural voice modulation, eye contact, and synchronized lip movements.
-4. An engaging asset ready to embed in welcome emails, customer onboarding sequences, or VIP sales follow-ups.
+A downloadable **5–15-second, 9:16 vertical personalized welcome video** featuring:
 
+1. A friendly AI presenter greeting the customer by first name.
+2. One concise and relevant OmniMedia or company benefit.
+3. One clear onboarding action.
+4. Natural speech sourced from **`Laura.mp3`** (or a matching personalized MP3), with eye contact and synchronized lip movements.
+
+The finished video can be used in welcome messages, onboarding flows, and personalized marketing campaigns.
