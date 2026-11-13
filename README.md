@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-# omnimedia
-omnimedia-samples
-=======
 # OmniMedia AI Creative Studio Workshop
 
 > **Workshop:** Attend the live session or follow along at your own pace. All lab files and sample assets are included in this repository.
@@ -89,4 +85,3 @@ Pre-loaded sample assets are included in the repository to let you begin immedia
 | **Lab 9 Manual** | [Lab 9: AI Virtual Influencer Video](./labs/Lab9_AI_Virtual_Influencer_Video.md) |
 | **Lab 10 Manual** | [Lab 10: AI Multi-Character Video](./labs/Lab10_AI_Multi_Character_Video.md) |
 | **Sample Assets Directory** | [`sample-assets/`](./sample-assets) |
->>>>>>> 3a3b109 (docs: add workshop content labs)
